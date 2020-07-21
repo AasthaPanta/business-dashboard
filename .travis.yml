@@ -7,3 +7,11 @@ script:
   - yarn test
   - yarn run build
 
+deploy:
+    provider: heroku
+    skip_cleanup: true
+    api_key:
+        secure: tF/Q2ynl8G43khZiUaZqXX+KamaWvicRSAAwx/GkqYD/zThQ/sm8F/yn/Ls6MB2gaYUdVFIvq4+owgVfVsJvY4YIo+DtLNlnNesVa4q7fAQ4IK294mtl4pc9P4xh/i7pR4m3Jz9dZMa93jD22nUnz6RkarHhso3KOeRBeiEgfJdjcR7KuNEtDfAsxEfHXjZ7OXI5B41d06YTZpsa3dNnAAnSnOArdyWsKsEq4AG1qrDnNfwK/ln4oa7yruUjon/XGL67YQE8VrBozwUmooNRkAkGjNe75reOKPzS6+oBzcp5mXSLZzZUkHbRQS8IPza8fIhIGC2e/ZVa41CBJYoD3q2wgd0BCcArawKTiVDk3b+lAE08Ej7jVKrOIy4Gdot4vNwCUIx2d0uHNZcU0BBS2e2e1nA6i0X5T5HYuXUI5NNuhiJiFef8xYQ2jvM6U9mpCcINU5qG7071s4iIO7f5j1RLU96kfWRAFSjBKAn6x8In9hUzah0uhTB2hBtEzZxLfTeuPIBaORp+eZ8xt36L0W49H0cvq/dYhMnrcl4JXv7aygTTIjcxr5EIyVutGZEeBvZO2xYODvgRgzWpBzVmefTnkebrvguP2l2ZqyI+9zvklrlr4fRLB03mGARFrMkUBNs9VCOH0V/9NtwuHtW2hw7u29w6/ksGrUTxMyx3R3E=
+    app: for-survey
+    on:
+        repo: AasthaPanta/business-dashboard
