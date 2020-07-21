@@ -71,7 +71,7 @@ class ReactVirtualizedTable extends React.Component{
 }
 
 export function VirtualizedTable(){
-    const [theme, setTheme] = useContext(ThemeContext);
+    const [theme] = useContext(ThemeContext);
     const dark = theme === 'dark';
     return(
         <Card height ={400} dark={dark}>

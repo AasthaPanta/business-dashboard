@@ -73,7 +73,7 @@ const getOptions = (dark) => {
 
 export function Chart(){
 
-    const [theme, setTheme] = useContext(ThemeContext);
+    const [theme] = useContext(ThemeContext);
 
     const dark = theme === 'dark';
 

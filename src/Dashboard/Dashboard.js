@@ -11,8 +11,8 @@ export const ThemeContext = createContext();
 export function Dashboard() {
 
     const themeState = useState('dark');
-    
-    const [theme, setTheme] = themeState;
+
+    const [theme] = themeState;
 
     const dark = theme === 'dark';
     return (
