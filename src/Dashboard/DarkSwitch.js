@@ -33,7 +33,7 @@ export function DarkSwitch() {
                     }}
                     checked = {dark}
                 />
-                Dark Mode
+                Dark mode
             </Label>
         </DarkSwitchContainer>
     )
